@@ -36,6 +36,7 @@
 		73FE73841CFAEFE90047EB2E /* nut6.png in Resources */ = {isa = PBXBuildFile; fileRef = 73FE736F1CFAEFE90047EB2E /* nut6.png */; };
 		73FE73851CFAEFE90047EB2E /* nut6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73FE73701CFAEFE90047EB2E /* nut6@2x.png */; };
 		73FE73861CFAEFE90047EB2E /* nut6@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73FE73711CFAEFE90047EB2E /* nut6@3x.png */; };
+		73FE73891CFB19F40047EB2E /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FE73881CFB19F40047EB2E /* Global.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,8 @@
 		73FE736F1CFAEFE90047EB2E /* nut6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nut6.png; path = img/nut6.png; sourceTree = "<group>"; };
 		73FE73701CFAEFE90047EB2E /* nut6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nut6@2x.png"; path = "img/nut6@2x.png"; sourceTree = "<group>"; };
 		73FE73711CFAEFE90047EB2E /* nut6@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nut6@3x.png"; path = "img/nut6@3x.png"; sourceTree = "<group>"; };
+		73FE73871CFB19F40047EB2E /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		73FE73881CFB19F40047EB2E /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 		73FE733F1CFAEED60047EB2E /* laixe_tiengduc */ = {
 			isa = PBXGroup;
 			children = (
+				73FE73871CFB19F40047EB2E /* Global.h */,
+				73FE73881CFB19F40047EB2E /* Global.m */,
 				73FE735C1CFAEF9E0047EB2E /* img */,
 				73FE73431CFAEED60047EB2E /* AppDelegate.h */,
 				73FE73441CFAEED60047EB2E /* AppDelegate.m */,
@@ -252,6 +257,7 @@
 			files = (
 				73FE73481CFAEED60047EB2E /* ViewController.m in Sources */,
 				73FE73451CFAEED60047EB2E /* AppDelegate.m in Sources */,
+				73FE73891CFB19F40047EB2E /* Global.m in Sources */,
 				73FE73421CFAEED60047EB2E /* main.m in Sources */,
 				73FE735A1CFAEEF00047EB2E /* MainViewController.m in Sources */,
 			);
