@@ -24,7 +24,7 @@
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hj4-TY-9dB">
-                    <rect key="frame" x="10" y="112" width="300" height="356"/>
+                    <rect key="frame" x="10" y="112" width="300" height="376"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSV-PO-w3Y">
                             <rect key="frame" x="120" y="45" width="60" height="60"/>
@@ -41,6 +41,9 @@
                                 <constraint firstAttribute="height" constant="60" id="dxr-qc-N5i"/>
                             </constraints>
                             <state key="normal" backgroundImage="nut1.png"/>
+                            <connections>
+                                <action selector="showFunction1:" destination="-1" eventType="touchDown" id="5ym-VL-Jj7"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4x-0J-Tb9">
                             <rect key="frame" x="230" y="45" width="60" height="60"/>
@@ -142,7 +145,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="hj4-TY-9dB" secondAttribute="bottom" constant="100" id="8BY-Ql-jYQ"/>
+                <constraint firstAttribute="bottom" secondItem="hj4-TY-9dB" secondAttribute="bottom" constant="80" id="8BY-Ql-jYQ"/>
                 <constraint firstItem="hj4-TY-9dB" firstAttribute="top" secondItem="vAh-Dx-Vn0" secondAttribute="bottom" constant="39" id="ZE3-AL-Rq9"/>
                 <constraint firstItem="hj4-TY-9dB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="aH1-kw-ckp"/>
                 <constraint firstItem="vAh-Dx-Vn0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gtc-Mt-UVa"/>

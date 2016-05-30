@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		738F65F51CFBEED30072ED7B /* db.db in Resources */ = {isa = PBXBuildFile; fileRef = 738F65F41CFBEED30072ED7B /* db.db */; };
+		738F65F91CFBEF4B0072ED7B /* OQuestionGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 738F65F81CFBEF4B0072ED7B /* OQuestionGroup.m */; };
+		738F65FC1CFBEFB40072ED7B /* DataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 738F65FB1CFBEFB40072ED7B /* DataAccess.m */; };
+		738F66001CFBF0140072ED7B /* QuestionGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 738F65FE1CFBF0140072ED7B /* QuestionGroupViewController.m */; };
+		738F66011CFBF0140072ED7B /* QuestionGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 738F65FF1CFBF0140072ED7B /* QuestionGroupViewController.xib */; };
+		738F66031CFBF1100072ED7B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 738F66021CFBF1100072ED7B /* libsqlite3.tbd */; };
+		738F66061CFBF5960072ED7B /* OQuestionTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 738F66051CFBF5960072ED7B /* OQuestionTheme.m */; };
+		738F660B1CFBF6260072ED7B /* QuestionThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 738F66091CFBF6260072ED7B /* QuestionThemeCell.m */; };
+		738F660C1CFBF6260072ED7B /* QuestionThemeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 738F660A1CFBF6260072ED7B /* QuestionThemeCell.xib */; };
 		73FE73421CFAEED60047EB2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FE73411CFAEED60047EB2E /* main.m */; };
 		73FE73451CFAEED60047EB2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FE73441CFAEED60047EB2E /* AppDelegate.m */; };
 		73FE73481CFAEED60047EB2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FE73471CFAEED60047EB2E /* ViewController.m */; };
@@ -40,6 +49,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		738F65F41CFBEED30072ED7B /* db.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.db; sourceTree = "<group>"; };
+		738F65F71CFBEF4B0072ED7B /* OQuestionGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQuestionGroup.h; sourceTree = "<group>"; };
+		738F65F81CFBEF4B0072ED7B /* OQuestionGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQuestionGroup.m; sourceTree = "<group>"; };
+		738F65FA1CFBEFB40072ED7B /* DataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAccess.h; sourceTree = "<group>"; };
+		738F65FB1CFBEFB40072ED7B /* DataAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataAccess.m; sourceTree = "<group>"; };
+		738F65FD1CFBF0140072ED7B /* QuestionGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionGroupViewController.h; sourceTree = "<group>"; };
+		738F65FE1CFBF0140072ED7B /* QuestionGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionGroupViewController.m; sourceTree = "<group>"; };
+		738F65FF1CFBF0140072ED7B /* QuestionGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionGroupViewController.xib; sourceTree = "<group>"; };
+		738F66021CFBF1100072ED7B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		738F66041CFBF5960072ED7B /* OQuestionTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQuestionTheme.h; sourceTree = "<group>"; };
+		738F66051CFBF5960072ED7B /* OQuestionTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQuestionTheme.m; sourceTree = "<group>"; };
+		738F66081CFBF6260072ED7B /* QuestionThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionThemeCell.h; sourceTree = "<group>"; };
+		738F66091CFBF6260072ED7B /* QuestionThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionThemeCell.m; sourceTree = "<group>"; };
+		738F660A1CFBF6260072ED7B /* QuestionThemeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionThemeCell.xib; sourceTree = "<group>"; };
 		73FE733D1CFAEED60047EB2E /* laixe_tiengduc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = laixe_tiengduc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FE73411CFAEED60047EB2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73FE73431CFAEED60047EB2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,15 +106,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				738F66031CFBF1100072ED7B /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		738F65F31CFBEEC90072ED7B /* db */ = {
+			isa = PBXGroup;
+			children = (
+				738F65FA1CFBEFB40072ED7B /* DataAccess.h */,
+				738F65FB1CFBEFB40072ED7B /* DataAccess.m */,
+				738F65F41CFBEED30072ED7B /* db.db */,
+			);
+			name = db;
+			sourceTree = "<group>";
+		};
+		738F65F61CFBEEF60072ED7B /* obj */ = {
+			isa = PBXGroup;
+			children = (
+				738F65F71CFBEF4B0072ED7B /* OQuestionGroup.h */,
+				738F65F81CFBEF4B0072ED7B /* OQuestionGroup.m */,
+				738F66041CFBF5960072ED7B /* OQuestionTheme.h */,
+				738F66051CFBF5960072ED7B /* OQuestionTheme.m */,
+			);
+			name = obj;
+			sourceTree = "<group>";
+		};
+		738F66071CFBF60A0072ED7B /* cus */ = {
+			isa = PBXGroup;
+			children = (
+				738F66081CFBF6260072ED7B /* QuestionThemeCell.h */,
+				738F66091CFBF6260072ED7B /* QuestionThemeCell.m */,
+				738F660A1CFBF6260072ED7B /* QuestionThemeCell.xib */,
+			);
+			name = cus;
+			sourceTree = "<group>";
+		};
 		73FE73341CFAEED50047EB2E = {
 			isa = PBXGroup;
 			children = (
+				738F66021CFBF1100072ED7B /* libsqlite3.tbd */,
 				73FE733F1CFAEED60047EB2E /* laixe_tiengduc */,
 				73FE733E1CFAEED60047EB2E /* Products */,
 			);
@@ -108,6 +164,9 @@
 		73FE733F1CFAEED60047EB2E /* laixe_tiengduc */ = {
 			isa = PBXGroup;
 			children = (
+				738F66071CFBF60A0072ED7B /* cus */,
+				738F65F61CFBEEF60072ED7B /* obj */,
+				738F65F31CFBEEC90072ED7B /* db */,
 				73FE73871CFB19F40047EB2E /* Global.h */,
 				73FE73881CFB19F40047EB2E /* Global.m */,
 				73FE735C1CFAEF9E0047EB2E /* img */,
@@ -123,6 +182,9 @@
 				73FE73571CFAEEF00047EB2E /* MainViewController.h */,
 				73FE73581CFAEEF00047EB2E /* MainViewController.m */,
 				73FE73591CFAEEF00047EB2E /* MainViewController.xib */,
+				738F65FD1CFBF0140072ED7B /* QuestionGroupViewController.h */,
+				738F65FE1CFBF0140072ED7B /* QuestionGroupViewController.m */,
+				738F65FF1CFBF0140072ED7B /* QuestionGroupViewController.xib */,
 			);
 			path = laixe_tiengduc;
 			sourceTree = "<group>";
@@ -225,12 +287,15 @@
 				73FE734D1CFAEED60047EB2E /* Assets.xcassets in Resources */,
 				73FE737D1CFAEFE90047EB2E /* nut3@3x.png in Resources */,
 				73FE73761CFAEFE90047EB2E /* nut1@2x.png in Resources */,
+				738F65F51CFBEED30072ED7B /* db.db in Resources */,
 				73FE73851CFAEFE90047EB2E /* nut6@2x.png in Resources */,
 				73FE73741CFAEFE90047EB2E /* header_icon.png in Resources */,
 				73FE73841CFAEFE90047EB2E /* nut6.png in Resources */,
 				73FE737A1CFAEFE90047EB2E /* nut2@3x.png in Resources */,
+				738F66011CFBF0140072ED7B /* QuestionGroupViewController.xib in Resources */,
 				73FE73791CFAEFE90047EB2E /* nut2@2x.png in Resources */,
 				73FE737B1CFAEFE90047EB2E /* nut3.png in Resources */,
+				738F660C1CFBF6260072ED7B /* QuestionThemeCell.xib in Resources */,
 				73FE73751CFAEFE90047EB2E /* nut1.png in Resources */,
 				73FE734B1CFAEED60047EB2E /* Main.storyboard in Resources */,
 				73FE73811CFAEFE90047EB2E /* nut5.png in Resources */,
@@ -256,8 +321,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				73FE73481CFAEED60047EB2E /* ViewController.m in Sources */,
+				738F660B1CFBF6260072ED7B /* QuestionThemeCell.m in Sources */,
+				738F65F91CFBEF4B0072ED7B /* OQuestionGroup.m in Sources */,
 				73FE73451CFAEED60047EB2E /* AppDelegate.m in Sources */,
+				738F65FC1CFBEFB40072ED7B /* DataAccess.m in Sources */,
+				738F66001CFBF0140072ED7B /* QuestionGroupViewController.m in Sources */,
 				73FE73891CFB19F40047EB2E /* Global.m in Sources */,
+				738F66061CFBF5960072ED7B /* OQuestionTheme.m in Sources */,
 				73FE73421CFAEED60047EB2E /* main.m in Sources */,
 				73FE735A1CFAEEF00047EB2E /* MainViewController.m in Sources */,
 			);
@@ -414,6 +484,7 @@
 				73FE73561CFAEED60047EB2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

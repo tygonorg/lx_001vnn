@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "QuestionGroupViewController.h"
 @interface MainViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIView *uiviewControls;
+- (IBAction)showFunction1:(id)sender;
 
 @end
