@@ -95,7 +95,7 @@
             
         }
         if (indexPath.row==0) {
-            cell1.lbl_Klass.text = @"Schwerig makierte Fragen";
+            cell1.lbl_Klass.text = @"Schwerig markierte Fragen";
             cell1.uc_Klass.hidden = YES;
         }
         if (indexPath.row==1) {
