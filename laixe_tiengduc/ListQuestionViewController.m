@@ -84,6 +84,8 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     QuestionTestViewController *testview = [[QuestionTestViewController alloc] initWithNibName:@"QuestionTestViewController" bundle:nil];
+    testview.lstQuestion = lstQuestion;
+    testview.CurrentPage = indexPath.row;
     [self.navigationController pushViewController:testview animated:YES];
     NSLog(@"Chang");
 }

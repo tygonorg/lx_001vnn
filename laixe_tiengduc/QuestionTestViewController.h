@@ -14,7 +14,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnnext;
 @property (weak, nonatomic) IBOutlet UIButton *btnOK;
 - (IBAction)nextPage:(id)sender;
+- (IBAction)prevPage:(id)sender;
 
+- (IBAction)testCheck:(id)sender;
 @property (weak, nonatomic) IBOutlet UIView *uccontent;
 @property (strong, nonatomic) UIPageViewController *pageViewController;
+@property NSMutableArray* lstQuestion;
+@property NSInteger CurrentPage;
 @end

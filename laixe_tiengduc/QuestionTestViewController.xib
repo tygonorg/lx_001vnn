@@ -33,6 +33,9 @@
                             <state key="normal" title="&lt;">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="prevPage:" destination="-1" eventType="touchDown" id="qAq-aF-gmk"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33D-Zs-UJi">
                             <rect key="frame" x="282" y="10" width="30" height="32"/>
@@ -53,6 +56,9 @@
                             <state key="normal" title="Lösung">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="testCheck:" destination="-1" eventType="touchDown" id="WY6-z1-JNn"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.89534057489999996" blue="0.57296277029999998" alpha="1" colorSpace="calibratedRGB"/>

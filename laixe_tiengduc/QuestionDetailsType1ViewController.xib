@@ -62,6 +62,9 @@
                     <state key="normal" title="Dap an 1" image="checkbox_off_mini.png">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="touch_1:" destination="-1" eventType="touchDown" id="gZ7-CC-Clo"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5d-pe-EEY">
                     <rect key="frame" x="8" y="284" width="296" height="48"/>
@@ -71,6 +74,9 @@
                     <state key="normal" title="Dap an 1" image="checkbox_off_mini.png">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="touch_2:" destination="-1" eventType="touchDown" id="zdg-pF-meT"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrI-bX-lKZ">
                     <rect key="frame" x="8" y="340" width="296" height="48"/>
@@ -80,6 +86,9 @@
                     <state key="normal" title="Dap an 1" image="checkbox_off_mini.png">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="touch_3:" destination="-1" eventType="touchDown" id="wMS-W2-3xY"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

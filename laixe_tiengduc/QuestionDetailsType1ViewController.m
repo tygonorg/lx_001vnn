@@ -16,8 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.txtQuestion.text = [NSString stringWithFormat:@"%ld",self.pageIndex];
-    NSLog(@"Tao page :%ld",self.pageIndex);
+    
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -25,7 +24,14 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (void)viewWillAppear:(BOOL)animated
+{
+//    self.navigationController.navigationBar.hidden = YES;
+    self.txtQuestion.text = self.Question.Zquestion;
+    [self.txtQuestion setFont: [UIFont fontWithName:@"HelveticaNeue" size:17.0]];
+    self.title = self.Question.ZFreagenKataLog;
+    //NSLog(@"Tao page :%ld",self.pageIndex);
+}
 /*
 #pragma mark - Navigation
 
@@ -36,4 +42,17 @@
 }
 */
 
+- (IBAction)touch_2:(id)sender {
+    if(self.btnAns2.tag==0){
+        self.btnAns2.tag=1;
+        [self.btnAns2 setImage:[UIImage imageNamed:@"checkbox_on_mini.png"] forState:UIControlStateNormal];
+        return;
+    }
+}
+
+- (IBAction)touch_1:(id)sender {
+}
+
+- (IBAction)touch_3:(id)sender {
+}
 @end
