@@ -48,11 +48,37 @@
         [self.btnAns2 setImage:[UIImage imageNamed:@"checkbox_on_mini.png"] forState:UIControlStateNormal];
         return;
     }
+    if(self.btnAns2.tag==1){
+        self.btnAns2.tag=0;
+        [self.btnAns2 setImage:[UIImage imageNamed:@"checkbox_off_mini.png"] forState:UIControlStateNormal];
+        return;
+    }
+    
 }
 
 - (IBAction)touch_1:(id)sender {
+    if(self.btnAns1.tag==0){
+        self.btnAns1.tag=1;
+        [self.btnAns1 setImage:[UIImage imageNamed:@"checkbox_on_mini.png"] forState:UIControlStateNormal];
+        return;
+    }
+    if(self.btnAns1.tag==1){
+        self.btnAns1.tag=0;
+        [self.btnAns1 setImage:[UIImage imageNamed:@"checkbox_off_mini.png"] forState:UIControlStateNormal];
+        return;
+    }
 }
 
 - (IBAction)touch_3:(id)sender {
+    if(self.btnAbs3.tag==0){
+        self.btnAbs3.tag=1;
+        [self.btnAbs3 setImage:[UIImage imageNamed:@"checkbox_on_mini.png"] forState:UIControlStateNormal];
+        return;
+    }
+    if(self.btnAbs3.tag==1){
+        self.btnAbs3.tag=0;
+        [self.btnAbs3 setImage:[UIImage imageNamed:@"checkbox_off_mini.png"] forState:UIControlStateNormal];
+        return;
+    }
 }
 @end
