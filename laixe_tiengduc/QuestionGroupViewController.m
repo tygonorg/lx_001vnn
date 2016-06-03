@@ -153,7 +153,7 @@
     
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if(indexPath.section==1){
+    if(indexPath.section!=0){
         OQuestionGroup *questionGroup = [lstGroup objectAtIndex:indexPath.section -1];
         NSMutableArray *lstOQT = [dt GetQuestionThemeByGroupId:questionGroup.Id];
         OQuestionTheme *questionthem = [lstOQT objectAtIndex:indexPath.row];

@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QuestionTestViewController : UIViewController
+@interface QuestionTestViewController : UIViewController<UIPageViewControllerDelegate,UIPageViewControllerDataSource>
+@property (weak, nonatomic) IBOutlet UIView *ucControls;
+@property (weak, nonatomic) IBOutlet UIButton *btnprev;
+@property (weak, nonatomic) IBOutlet UIButton *btnnext;
+@property (weak, nonatomic) IBOutlet UIButton *btnOK;
+- (IBAction)nextPage:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIView *uccontent;
+@property (strong, nonatomic) UIPageViewController *pageViewController;
 @end

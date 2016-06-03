@@ -8,6 +8,7 @@
 
 #import "ListQuestionViewController.h"
 #import "QuestionCell.h"
+#import "QuestionTestViewController.h"
 @interface ListQuestionViewController ()
 {
     DataAccess *dt;
@@ -82,6 +83,8 @@
     
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    QuestionTestViewController *testview = [[QuestionTestViewController alloc] initWithNibName:@"QuestionTestViewController" bundle:nil];
+    [self.navigationController pushViewController:testview animated:YES];
     NSLog(@"Chang");
 }
 
