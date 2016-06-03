@@ -30,19 +30,86 @@
     self.txtQuestion.text = self.Question.Zquestion;
     [self.txtQuestion setFont: [UIFont fontWithName:@"HelveticaNeue" size:17.0]];
     self.title = self.Question.ZFreagenKataLog;
-    //NSLog(@"Tao page :%ld",self.pageIndex);
+    
+    if ([self.Question.ZAnswer1 isEqualToString:@""]) {
+        self.lblAns1.hidden=YES;
+        self.btnAns1.hidden=YES;
+    } else{
+        self.lblAns1.text = self.Question.ZAnswer1;
+    }
+    
+    if ([self.Question.ZAnswer2 isEqualToString:@""]) {
+        self.lblAns2.hidden=YES;
+        self.btnAns2.hidden=YES;
+    } else{
+        self.lblAns2.text = self.Question.ZAnswer3;
+    }
+    
+    if ([self.Question.ZAnswer3 isEqualToString:@""]) {
+        self.lblAns3.hidden=YES;
+        self.btnAbs3.hidden=YES;
+    } else{
+        self.lblAns3.text = self.Question.ZAnswer3;
+    }
+    if (![self.Question.Zimage isEqualToString:@""]) {
+        [self.img_Test setImage:[UIImage imageNamed:self.Question.Zimage]];
+    }
+    
 }
-/*
-#pragma mark - Navigation
+- (BOOL) checkISUserCheck{
+    if (self.btnAns1.tag==1||self.btnAns2.tag==1||self.btnAbs3.tag==1) {
+        return YES;
+    }
+    return NO;
+}
+- (void) CheckAndShowAns{
+    //nguoi dung co tra loi
+    if (self.btnAns1.tag==2||self.btnAns2.tag==2||self.btnAbs3.tag==2) {
+        return;
+    }
+    
+    if ([self checkISUserCheck]) {
+        
+    } else {
+        // nguoi dung ko tra loi gi ca
+        if (![self.Question.ZAnswer1 isEqualToString:@""]) {
+            if (self.Question.ZValid1==1) {
+                [self.btnAns1 setImage:[UIImage imageNamed:@"checkbox_off_right.png"] forState:UIControlStateNormal];
+            } else {
+                 [self.btnAns1 setImage:[UIImage imageNamed:@"checkbox_off_wrong.png"] forState:UIControlStateNormal];
+            }
+        }
+        if (![self.Question.ZAnswer2 isEqualToString:@""]) {
+            if (self.Question.ZValid2==1) {
+                [self.btnAns2 setImage:[UIImage imageNamed:@"checkbox_off_right.png"] forState:UIControlStateNormal];
+            } else {
+                [self.btnAns2 setImage:[UIImage imageNamed:@"checkbox_off_wrong.png"] forState:UIControlStateNormal];
+            }
+        }
+        if (![self.Question.ZAnswer3 isEqualToString:@""]) {
+            if (self.Question.ZValid3==1) {
+                [self.btnAbs3 setImage:[UIImage imageNamed:@"checkbox_off_right.png"] forState:UIControlStateNormal];
+            } else {
+                [self.btnAbs3 setImage:[UIImage imageNamed:@"checkbox_off_wrong.png"] forState:UIControlStateNormal];
+            }
+        }
+        
+        
+        
+        
+        
+    }
+    self.btnAns1.tag=2;
+    self.btnAns2.tag=2;
+    self.btnAbs3.tag=2;
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
 
 - (IBAction)touch_2:(id)sender {
+    if(self.btnAns2.tag==2){
+        return;
+    }
+    
     if(self.btnAns2.tag==0){
         self.btnAns2.tag=1;
         [self.btnAns2 setImage:[UIImage imageNamed:@"checkbox_on_mini.png"] forState:UIControlStateNormal];
@@ -57,6 +124,9 @@
 }
 
 - (IBAction)touch_1:(id)sender {
+    if(self.btnAns1.tag==2){
+        return;
+    }
     if(self.btnAns1.tag==0){
         self.btnAns1.tag=1;
         [self.btnAns1 setImage:[UIImage imageNamed:@"checkbox_on_mini.png"] forState:UIControlStateNormal];
@@ -70,6 +140,9 @@
 }
 
 - (IBAction)touch_3:(id)sender {
+    if(self.btnAbs3.tag==2){
+        return;
+    }
     if(self.btnAbs3.tag==0){
         self.btnAbs3.tag=1;
         [self.btnAbs3 setImage:[UIImage imageNamed:@"checkbox_on_mini.png"] forState:UIControlStateNormal];

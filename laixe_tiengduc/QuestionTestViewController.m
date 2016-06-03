@@ -168,7 +168,7 @@
 
 - (IBAction)testCheck:(id)sender {
     QuestionDetailsType1ViewController *view = [self viewControllerAtIndex:self.CurrentPage];
-    
-    [view.btnAns1 setImage:[UIImage imageNamed:@"checkbox_off_wrong.png"] forState:UIControlStateNormal];
+    [view CheckAndShowAns];
+    //[view.btnAns1 setImage:[UIImage imageNamed:@"checkbox_off_wrong.png"] forState:UIControlStateNormal];
 }
 @end

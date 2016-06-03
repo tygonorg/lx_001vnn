@@ -17,5 +17,10 @@
 - (IBAction)touch_1:(id)sender;
 - (IBAction)touch_3:(id)sender;
 @property NSInteger pageIndex;
+@property (weak, nonatomic) IBOutlet UILabel *lblAns1;
+@property (weak, nonatomic) IBOutlet UILabel *lblAns2;
+@property (weak, nonatomic) IBOutlet UILabel *lblAns3;
 @property OQuestion *Question;
+@property (weak, nonatomic) IBOutlet UIImageView *img_Test;
+- (void) CheckAndShowAns;
 @end

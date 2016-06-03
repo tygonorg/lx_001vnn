@@ -115,7 +115,7 @@
     const char *path = [dbpath UTF8String];
     if(sqlite3_open(path,&_db)==SQLITE_OK)
     {
-        NSString *query = [NSString stringWithFormat:@"select z_pk,zquestion,zfragenkatalog from zquestion where zfragenkatalog like '%@%%' and ztype like '%%,3,%%'",perfix];
+        NSString *query = [NSString stringWithFormat:@"select z_pk,zquestion,zfragenkatalog,zanswer1,zanswer2,zanswer3,zvalid1,zvalid2,zvalid3,zimage from zquestion where zfragenkatalog like '%@%%' and ztype like '%%,3,%%'",perfix];
         NSLog(@"SQL: %@",query);
         const char *query_stmt =[query UTF8String];
         if(sqlite3_prepare_v2(_db, query_stmt, -1,&stmt, NULL)==SQLITE_OK)
@@ -127,18 +127,44 @@
                 dl.Id=id_c;
                 char *title = (char *)sqlite3_column_text(stmt, 1);
                 
-
-                
-                NSData *data = [NSData dataWithBytes:title length:strlen(title)];
-                NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-                NSLog(@"result string: %@", string);
-                
-                char* tempString = [string cStringUsingEncoding:NSISOLatin1StringEncoding];
-                string = [NSString stringWithUTF8String:tempString];
-                
-                dl.Zquestion =string;
+                dl.Zquestion =[NSString stringWithUTF8String:title];
                 char *contents=(char *)sqlite3_column_text(stmt, 2);
                 dl.ZFreagenKataLog =[NSString stringWithUTF8String:(char *)contents];
+                
+                char *zanswe1=(char *)sqlite3_column_text(stmt, 3);
+                if (zanswe1==NULL) {
+                    dl.ZAnswer1=@"";
+                } else {
+                    dl.ZAnswer1 = [NSString stringWithUTF8String:zanswe1];
+                }
+                char *zanswe2=(char *)sqlite3_column_text(stmt, 4);
+                if (zanswe2==NULL) {
+                    dl.ZAnswer2=@"";
+                }else{
+                    dl.ZAnswer2 = [NSString stringWithUTF8String:zanswe2];
+                }
+                
+                char *zanswe3=(char *)sqlite3_column_text(stmt, 5);
+                if (zanswe3==NULL) {
+                    dl.ZAnswer3=@"";
+                } else {
+                    dl.ZAnswer3 = [NSString stringWithUTF8String:zanswe3];
+                }
+                
+                dl.ZValid1 = sqlite3_column_int(stmt,6);
+                dl.ZValid2 = sqlite3_column_int(stmt,7);
+                dl.ZValid3 = sqlite3_column_int(stmt,8);
+                
+                
+                char *zimage=(char *)sqlite3_column_text(stmt, 9);
+                if (zimage==NULL) {
+                    dl.Zimage=@"";
+                } else {
+                    dl.Zimage = [[NSString stringWithUTF8String:zimage] stringByReplacingOccurrencesOfString:@"gfx/small/" withString:@""];
+                }
+
+                
+                
                 [lstdieule addObject:dl];
             }
             sqlite3_finalize(stmt);

@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wqI-wD-EYq">
-                    <rect key="frame" x="0.0" y="49" width="320" height="519"/>
+                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="njt-sz-sBi"/>
@@ -25,19 +25,19 @@
                     </connections>
                 </tableView>
                 <searchBar contentMode="redraw" placeholder="Suchen" translatesAutoresizingMaskIntoConstraints="NO" id="dZl-Gr-7st">
-                    <rect key="frame" x="0.0" y="50" width="320" height="44"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="wqI-wD-EYq" firstAttribute="top" secondItem="dZl-Gr-7st" secondAttribute="bottom" constant="-45" id="56y-rv-nFc"/>
+                <constraint firstItem="wqI-wD-EYq" firstAttribute="top" secondItem="dZl-Gr-7st" secondAttribute="bottom" id="56y-rv-nFc"/>
                 <constraint firstItem="dZl-Gr-7st" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7mz-RQ-Xuw"/>
                 <constraint firstItem="wqI-wD-EYq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8oN-aH-051"/>
                 <constraint firstAttribute="bottom" secondItem="wqI-wD-EYq" secondAttribute="bottom" id="B2W-zP-Lyk"/>
                 <constraint firstAttribute="trailing" secondItem="wqI-wD-EYq" secondAttribute="trailing" id="OfE-Qg-zNT"/>
                 <constraint firstAttribute="trailing" secondItem="dZl-Gr-7st" secondAttribute="trailing" id="W4t-rw-E83"/>
-                <constraint firstItem="dZl-Gr-7st" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="kxc-wu-T6Z"/>
+                <constraint firstItem="dZl-Gr-7st" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kxc-wu-T6Z"/>
             </constraints>
             <point key="canvasLocation" x="340" y="403"/>
         </view>

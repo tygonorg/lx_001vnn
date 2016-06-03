@@ -12,4 +12,11 @@
 @property NSInteger Id;
 @property NSString *Zquestion;
 @property NSString *ZFreagenKataLog;
+@property NSString *ZAnswer1;
+@property NSInteger ZValid1;
+@property NSString *ZAnswer2;
+@property NSInteger ZValid2;
+@property NSString *ZAnswer3;
+@property NSInteger ZValid3;
+@property NSString *Zimage;
 @end

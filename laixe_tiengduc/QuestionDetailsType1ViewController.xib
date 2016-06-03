@@ -10,6 +10,10 @@
                 <outlet property="btnAbs3" destination="WrI-bX-lKZ" id="SaR-BM-SNd"/>
                 <outlet property="btnAns1" destination="0no-HU-gwF" id="M6E-qw-DGu"/>
                 <outlet property="btnAns2" destination="o5d-pe-EEY" id="YFc-DR-LlQ"/>
+                <outlet property="img_Test" destination="VXb-hR-uN4" id="nLY-C1-DqA"/>
+                <outlet property="lblAns1" destination="aCc-9r-Stp" id="Lqn-0r-scw"/>
+                <outlet property="lblAns2" destination="mMC-Ai-195" id="a2c-i9-QQZ"/>
+                <outlet property="lblAns3" destination="JDY-d7-0Zb" id="orn-8q-hNl"/>
                 <outlet property="txtQuestion" destination="eW5-iL-qnG" id="DQv-Ll-IV7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -48,14 +52,14 @@
                         <constraint firstItem="dTC-lm-hlh" firstAttribute="leading" secondItem="eW5-iL-qnG" secondAttribute="trailing" constant="8" id="yzI-Df-Wuh"/>
                     </constraints>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VXb-hR-uN4">
-                    <rect key="frame" x="0.0" y="100" width="320" height="120"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VXb-hR-uN4">
+                    <rect key="frame" x="0.0" y="100" width="320" height="200"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="120" id="vPc-Z4-ICp"/>
+                        <constraint firstAttribute="height" constant="200" id="vPc-Z4-ICp"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0no-HU-gwF">
-                    <rect key="frame" x="8" y="228" width="48" height="48"/>
+                    <rect key="frame" x="8" y="308" width="48" height="48"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="JdJ-Bg-jbN"/>
                         <constraint firstAttribute="width" constant="48" id="uuU-gp-835"/>
@@ -68,7 +72,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5d-pe-EEY">
-                    <rect key="frame" x="8" y="284" width="48" height="48"/>
+                    <rect key="frame" x="8" y="364" width="48" height="48"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="48" id="9lp-bD-vwE"/>
                         <constraint firstAttribute="height" constant="48" id="eUU-gR-Tl8"/>
@@ -81,7 +85,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrI-bX-lKZ">
-                    <rect key="frame" x="8" y="340" width="48" height="48"/>
+                    <rect key="frame" x="8" y="420" width="48" height="48"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="klE-Ul-bws"/>
                         <constraint firstAttribute="width" constant="48" id="oN8-mC-x6d"/>
@@ -93,21 +97,21 @@
                         <action selector="touch_3:" destination="-1" eventType="touchDown" id="wMS-W2-3xY"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCc-9r-Stp">
-                    <rect key="frame" x="64" y="241" width="248" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCc-9r-Stp">
+                    <rect key="frame" x="64" y="321" width="248" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMC-Ai-195">
-                    <rect key="frame" x="64" y="297" width="248" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMC-Ai-195">
+                    <rect key="frame" x="64" y="377" width="248" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDY-d7-0Zb">
-                    <rect key="frame" x="64" y="353" width="248" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDY-d7-0Zb">
+                    <rect key="frame" x="64" y="433" width="248" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
