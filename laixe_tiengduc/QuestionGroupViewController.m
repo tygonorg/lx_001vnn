@@ -47,7 +47,7 @@
 }
 
 - (IBAction)ChangeLange:(id)sender{
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:@"Bạn có muốn Chon ngon ngu?" delegate:self cancelButtonTitle:@"Không" otherButtonTitles:@"Có", nil];
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:@"Bạn có muốn mở gói ngôn ngữ tiếng Việt?" delegate:self cancelButtonTitle:@"Không" otherButtonTitles:@"Có", nil];
     [alert show];
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
