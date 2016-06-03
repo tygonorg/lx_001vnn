@@ -152,6 +152,19 @@
     
     
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(indexPath.section==1){
+        OQuestionGroup *questionGroup = [lstGroup objectAtIndex:indexPath.section -1];
+        NSMutableArray *lstOQT = [dt GetQuestionThemeByGroupId:questionGroup.Id];
+        OQuestionTheme *questionthem = [lstOQT objectAtIndex:indexPath.row];
+        ListQuestionViewController *controllerview = [[ListQuestionViewController alloc] initWithNibName:@"ListQuestionViewController" bundle:nil];
+        controllerview.Title_ = questionthem.Name;
+        controllerview.Perfix = questionthem.Prefix;
+        
+        [self.navigationController pushViewController:controllerview animated:YES];
+    }
+}
+
 
 -(void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:    (NSInteger)section {
     

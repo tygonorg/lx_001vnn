@@ -10,6 +10,7 @@
 #import "sqlite3.h"
 #import "OQuestionGroup.h"
 #import "OQuestionTheme.h"
+#import "OQuestion.h"
 @interface DataAccess : NSObject
 {
     sqlite3 *_db;
@@ -20,4 +21,5 @@
 - (void)createEditableCopyOfDatabaseIfNeeded;
 - (NSMutableArray*) GetAllQuestionGroup;
 - (NSMutableArray*) GetQuestionThemeByGroupId:(NSInteger) IdGroup;
+- (NSMutableArray*) GetQuestionByPerfix:(NSString*) perfix;
 @end

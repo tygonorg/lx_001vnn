@@ -36,6 +36,15 @@
 		738F664C1CFD2D0C0072ED7B /* vi.png in Resources */ = {isa = PBXBuildFile; fileRef = 738F663A1CFD2D0C0072ED7B /* vi.png */; };
 		738F66501CFD366F0072ED7B /* KlasseBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 738F664E1CFD366F0072ED7B /* KlasseBCell.m */; };
 		738F66511CFD366F0072ED7B /* KlasseBCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 738F664F1CFD366F0072ED7B /* KlasseBCell.xib */; };
+		73A1C4771CFF17BD007BAD7C /* QuestionTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A1C4751CFF17BD007BAD7C /* QuestionTestViewController.m */; };
+		73A1C4781CFF17BD007BAD7C /* QuestionTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73A1C4761CFF17BD007BAD7C /* QuestionTestViewController.xib */; };
+		73A1C47B1CFF1A32007BAD7C /* vi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A1C4791CFF1A32007BAD7C /* vi@2x.png */; };
+		73A1C47C1CFF1A32007BAD7C /* vi@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A1C47A1CFF1A32007BAD7C /* vi@3x.png */; };
+		73A1C4801CFFBB37007BAD7C /* QuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A1C47E1CFFBB37007BAD7C /* QuestionCell.m */; };
+		73A1C4811CFFBB37007BAD7C /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73A1C47F1CFFBB37007BAD7C /* QuestionCell.xib */; };
+		73A1C4851CFFBC0D007BAD7C /* ListQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A1C4831CFFBC0D007BAD7C /* ListQuestionViewController.m */; };
+		73A1C4861CFFBC0D007BAD7C /* ListQuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73A1C4841CFFBC0D007BAD7C /* ListQuestionViewController.xib */; };
+		73A1C4891CFFBCE1007BAD7C /* OQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A1C4881CFFBCE1007BAD7C /* OQuestion.m */; };
 		73FE73421CFAEED60047EB2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FE73411CFAEED60047EB2E /* main.m */; };
 		73FE73451CFAEED60047EB2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FE73441CFAEED60047EB2E /* AppDelegate.m */; };
 		73FE73481CFAEED60047EB2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FE73471CFAEED60047EB2E /* ViewController.m */; };
@@ -104,6 +113,19 @@
 		738F664D1CFD366F0072ED7B /* KlasseBCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KlasseBCell.h; sourceTree = "<group>"; };
 		738F664E1CFD366F0072ED7B /* KlasseBCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KlasseBCell.m; sourceTree = "<group>"; };
 		738F664F1CFD366F0072ED7B /* KlasseBCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KlasseBCell.xib; sourceTree = "<group>"; };
+		73A1C4741CFF17BD007BAD7C /* QuestionTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionTestViewController.h; sourceTree = "<group>"; };
+		73A1C4751CFF17BD007BAD7C /* QuestionTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTestViewController.m; sourceTree = "<group>"; };
+		73A1C4761CFF17BD007BAD7C /* QuestionTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionTestViewController.xib; sourceTree = "<group>"; };
+		73A1C4791CFF1A32007BAD7C /* vi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "vi@2x.png"; path = "img/screen1/vi@2x.png"; sourceTree = "<group>"; };
+		73A1C47A1CFF1A32007BAD7C /* vi@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "vi@3x.png"; path = "img/screen1/vi@3x.png"; sourceTree = "<group>"; };
+		73A1C47D1CFFBB37007BAD7C /* QuestionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionCell.h; sourceTree = "<group>"; };
+		73A1C47E1CFFBB37007BAD7C /* QuestionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionCell.m; sourceTree = "<group>"; };
+		73A1C47F1CFFBB37007BAD7C /* QuestionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionCell.xib; sourceTree = "<group>"; };
+		73A1C4821CFFBC0D007BAD7C /* ListQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListQuestionViewController.h; sourceTree = "<group>"; };
+		73A1C4831CFFBC0D007BAD7C /* ListQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListQuestionViewController.m; sourceTree = "<group>"; };
+		73A1C4841CFFBC0D007BAD7C /* ListQuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListQuestionViewController.xib; sourceTree = "<group>"; };
+		73A1C4871CFFBCE1007BAD7C /* OQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQuestion.h; sourceTree = "<group>"; };
+		73A1C4881CFFBCE1007BAD7C /* OQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQuestion.m; sourceTree = "<group>"; };
 		73FE733D1CFAEED60047EB2E /* laixe_tiengduc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = laixe_tiengduc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FE73411CFAEED60047EB2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73FE73431CFAEED60047EB2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -171,6 +193,8 @@
 				738F65F81CFBEF4B0072ED7B /* OQuestionGroup.m */,
 				738F66041CFBF5960072ED7B /* OQuestionTheme.h */,
 				738F66051CFBF5960072ED7B /* OQuestionTheme.m */,
+				73A1C4871CFFBCE1007BAD7C /* OQuestion.h */,
+				73A1C4881CFFBCE1007BAD7C /* OQuestion.m */,
 			);
 			name = obj;
 			sourceTree = "<group>";
@@ -184,6 +208,9 @@
 				738F664D1CFD366F0072ED7B /* KlasseBCell.h */,
 				738F664E1CFD366F0072ED7B /* KlasseBCell.m */,
 				738F664F1CFD366F0072ED7B /* KlasseBCell.xib */,
+				73A1C47D1CFFBB37007BAD7C /* QuestionCell.h */,
+				73A1C47E1CFFBB37007BAD7C /* QuestionCell.m */,
+				73A1C47F1CFFBB37007BAD7C /* QuestionCell.xib */,
 			);
 			name = cus;
 			sourceTree = "<group>";
@@ -229,6 +256,12 @@
 				738F65FD1CFBF0140072ED7B /* QuestionGroupViewController.h */,
 				738F65FE1CFBF0140072ED7B /* QuestionGroupViewController.m */,
 				738F65FF1CFBF0140072ED7B /* QuestionGroupViewController.xib */,
+				73A1C4741CFF17BD007BAD7C /* QuestionTestViewController.h */,
+				73A1C4751CFF17BD007BAD7C /* QuestionTestViewController.m */,
+				73A1C4761CFF17BD007BAD7C /* QuestionTestViewController.xib */,
+				73A1C4821CFFBC0D007BAD7C /* ListQuestionViewController.h */,
+				73A1C4831CFFBC0D007BAD7C /* ListQuestionViewController.m */,
+				73A1C4841CFFBC0D007BAD7C /* ListQuestionViewController.xib */,
 			);
 			path = laixe_tiengduc;
 			sourceTree = "<group>";
@@ -244,6 +277,8 @@
 		73FE735C1CFAEF9E0047EB2E /* img */ = {
 			isa = PBXGroup;
 			children = (
+				73A1C4791CFF1A32007BAD7C /* vi@2x.png */,
+				73A1C47A1CFF1A32007BAD7C /* vi@3x.png */,
 				738F66291CFD2D0C0072ED7B /* bg.png */,
 				738F662A1CFD2D0C0072ED7B /* de.png */,
 				738F662B1CFD2D0C0072ED7B /* icon1.png */,
@@ -346,10 +381,12 @@
 			files = (
 				738F663C1CFD2D0C0072ED7B /* de.png in Resources */,
 				738F66401CFD2D0C0072ED7B /* icon2.png in Resources */,
+				73A1C4861CFFBC0D007BAD7C /* ListQuestionViewController.xib in Resources */,
 				73FE73781CFAEFE90047EB2E /* nut2.png in Resources */,
 				73FE73501CFAEED60047EB2E /* LaunchScreen.storyboard in Resources */,
 				738F663E1CFD2D0C0072ED7B /* icon1@2x.png in Resources */,
 				73FE734D1CFAEED60047EB2E /* Assets.xcassets in Resources */,
+				73A1C4781CFF17BD007BAD7C /* QuestionTestViewController.xib in Resources */,
 				73FE737D1CFAEFE90047EB2E /* nut3@3x.png in Resources */,
 				73FE73761CFAEFE90047EB2E /* nut1@2x.png in Resources */,
 				738F66471CFD2D0C0072ED7B /* icon4@2x.png in Resources */,
@@ -362,7 +399,9 @@
 				738F66441CFD2D0C0072ED7B /* icon3@2x.png in Resources */,
 				738F66421CFD2D0C0072ED7B /* icon2@3x.png in Resources */,
 				738F66011CFBF0140072ED7B /* QuestionGroupViewController.xib in Resources */,
+				73A1C4811CFFBB37007BAD7C /* QuestionCell.xib in Resources */,
 				738F66431CFD2D0C0072ED7B /* icon3.png in Resources */,
+				73A1C47B1CFF1A32007BAD7C /* vi@2x.png in Resources */,
 				738F66461CFD2D0C0072ED7B /* icon4.png in Resources */,
 				73FE73791CFAEFE90047EB2E /* nut2@2x.png in Resources */,
 				738F66451CFD2D0C0072ED7B /* icon3@3x.png in Resources */,
@@ -382,6 +421,7 @@
 				738F66511CFD366F0072ED7B /* KlasseBCell.xib in Resources */,
 				73FE73731CFAEFE90047EB2E /* bg2.png in Resources */,
 				738F663B1CFD2D0C0072ED7B /* bg.png in Resources */,
+				73A1C47C1CFF1A32007BAD7C /* vi@3x.png in Resources */,
 				73FE73801CFAEFE90047EB2E /* nut4@3x.png in Resources */,
 				73FE73771CFAEFE90047EB2E /* nut1@3x.png in Resources */,
 				738F663F1CFD2D0C0072ED7B /* icon1@3x.png in Resources */,
@@ -405,12 +445,16 @@
 				738F660B1CFBF6260072ED7B /* QuestionThemeCell.m in Sources */,
 				738F66501CFD366F0072ED7B /* KlasseBCell.m in Sources */,
 				738F65F91CFBEF4B0072ED7B /* OQuestionGroup.m in Sources */,
+				73A1C4801CFFBB37007BAD7C /* QuestionCell.m in Sources */,
 				73FE73451CFAEED60047EB2E /* AppDelegate.m in Sources */,
 				738F65FC1CFBEFB40072ED7B /* DataAccess.m in Sources */,
+				73A1C4891CFFBCE1007BAD7C /* OQuestion.m in Sources */,
 				738F66001CFBF0140072ED7B /* QuestionGroupViewController.m in Sources */,
 				73FE73891CFB19F40047EB2E /* Global.m in Sources */,
 				738F66061CFBF5960072ED7B /* OQuestionTheme.m in Sources */,
+				73A1C4851CFFBC0D007BAD7C /* ListQuestionViewController.m in Sources */,
 				73FE73421CFAEED60047EB2E /* main.m in Sources */,
+				73A1C4771CFF17BD007BAD7C /* QuestionTestViewController.m in Sources */,
 				73FE735A1CFAEEF00047EB2E /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

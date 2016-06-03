@@ -108,4 +108,51 @@
     sqlite3_close(_db);
     return lstdieule;
 }
+- (NSMutableArray*) GetQuestionByPerfix:(NSString*) perfix{
+    NSMutableArray *lstdieule=[[NSMutableArray alloc] init];
+    NSString* dbpath= [DataAccess getDBPath];
+    sqlite3_stmt *stmt;
+    const char *path = [dbpath UTF8String];
+    if(sqlite3_open(path,&_db)==SQLITE_OK)
+    {
+        NSString *query = [NSString stringWithFormat:@"select z_pk,zquestion,zfragenkatalog from zquestion where zfragenkatalog like '%@%%' and ztype like '%%,3,%%'",perfix];
+        NSLog(@"SQL: %@",query);
+        const char *query_stmt =[query UTF8String];
+        if(sqlite3_prepare_v2(_db, query_stmt, -1,&stmt, NULL)==SQLITE_OK)
+        {
+            int ret;
+            while ((ret=sqlite3_step(stmt))==SQLITE_ROW) {
+                NSInteger id_c = sqlite3_column_int(stmt,0);
+                OQuestion *dl =[[OQuestion alloc] init];
+                dl.Id=id_c;
+                char *title = (char *)sqlite3_column_text(stmt, 1);
+                
+
+                
+                NSData *data = [NSData dataWithBytes:title length:strlen(title)];
+                NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+                NSLog(@"result string: %@", string);
+                
+                char* tempString = [string cStringUsingEncoding:NSISOLatin1StringEncoding];
+                string = [NSString stringWithUTF8String:tempString];
+                
+                dl.Zquestion =string;
+                char *contents=(char *)sqlite3_column_text(stmt, 2);
+                dl.ZFreagenKataLog =[NSString stringWithUTF8String:(char *)contents];
+                [lstdieule addObject:dl];
+            }
+            sqlite3_finalize(stmt);
+        }
+        else {
+            NSLog(@"err prepare:%s",sqlite3_errmsg(_db));
+        }
+        //sqlite3_finalize(stmt);
+    }
+    else {
+        NSLog(@"open error:%s",sqlite3_errmsg(_db));
+    }
+    sqlite3_close(_db);
+    return lstdieule;
+}
+
 @end
